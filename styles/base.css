@@ -1,0 +1,58 @@
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+* {
+    font-family: "Veranda", Arial, sans-serif;
+
+}
+main {
+    text-align: center;
+}
+.card ul {
+    display: block;
+    
+}
+
+#navbar {
+    display: block;
+   
+    text-align: center;
+    
+    margin: 10px;
+    font-size: large;
+    
+    
+    
+}
+
+#navbar a{
+    border: 1px solid black;
+}
+
+#intropic {
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+
+}
+#headermain  {
+    display: flex;
+    background-color:rebeccapurple;
+    justify-content: center;
+    align-items: center;
+    color: ivory;
+}
+h2, h3 {
+    display: flex;
+    background-color:rebeccapurple;
+    justify-content: center;
+    align-items: center;
+    color: ivory;
+    
+}
+footer {
+    text-align: center;
+}
