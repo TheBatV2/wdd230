@@ -1,0 +1,16 @@
+main {
+   display: block;
+   text-align: center;
+  
+    
+}
+header, .card h2 {
+    display: block;
+    width:fit-content;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    background-color: 
+    #1e88e5;
+     
+ }
