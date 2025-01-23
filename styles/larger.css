@@ -1,0 +1,75 @@
+@media screen and (min-width: 800px){#content {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    * {
+        font-family: "Veranda", Arial, sans-serif;
+
+    }
+    main {
+        display:grid;
+        max-width:100%;
+        
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr;
+        
+        gap: 10px;
+        text-align: center;
+        
+    }
+    #la{
+        grid-column: 1;
+    }
+    #info{
+        grid-column: 2;
+    }
+ 
+   
+
+    #navbar {
+        display: flex;
+        
+        justify-content: center;
+    
+        text-align: center;
+        
+        margin: 10px;
+        font-size: large;
+        
+        
+        
+    }
+
+    #navbar a{
+        border: 1px solid black;
+    }
+
+    #intropic {
+        padding: 10px;
+        width: 200px;
+        height: 200px;
+        border-radius: 8px;
+
+    }
+    #headermain  {
+        display: flex;
+    
+        background-color:rebeccapurple;
+        justify-content: center;
+        align-items: center;
+        color: ivory;
+    }
+    h2, h3 {
+       
+    
+        background-color:rebeccapurple;
+        justify-content: center;
+        align-items: center;
+        color: ivory;
+        
+    }
+    footer {
+        text-align: center;
+    }
+}

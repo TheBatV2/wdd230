@@ -1,5 +1,5 @@
 #content {
-    max-width: 1600px;
+   
     margin: 0 auto;
 }
 
@@ -8,16 +8,19 @@
 
 }
 main {
+    display: grid;
+    grid-template-columns: 1fr;
     text-align: center;
 }
 .card ul {
     display: block;
     
 }
-
 #navbar {
-    display: block;
-   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     text-align: center;
     
     margin: 10px;
@@ -40,7 +43,7 @@ main {
 }
 #headermain  {
     display: flex;
-   
+
     background-color:rebeccapurple;
     justify-content: center;
     align-items: center;
@@ -48,7 +51,7 @@ main {
 }
 h2, h3 {
     display: flex;
- 
+
     background-color:rebeccapurple;
     justify-content: center;
     align-items: center;
@@ -58,3 +61,4 @@ h2, h3 {
 footer {
     text-align: center;
 }
+
