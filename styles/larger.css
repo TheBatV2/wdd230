@@ -27,7 +27,7 @@
  
    
 
-    #navbar {
+    .navbar {
         display: flex;
         
         justify-content: center;
@@ -41,7 +41,7 @@
         
     }
 
-    #navbar a{
+    .navbar a{
         border: 1px solid black;
     }
 
