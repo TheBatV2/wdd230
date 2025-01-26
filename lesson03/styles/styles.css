@@ -4,4 +4,31 @@
 }
 :root{
     color-scheme: normal;
+    --primary-color: #4083e1;  
+    --secondary-color: #16478b; 
+    --accent-color: #1a55a7 ;    
+    --background-color: #deeafa; 
+    --text-color: black;      
 }
+
+.box {
+    height: 20px;
+    width: 20px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+  }
+  .primary{
+    background-color: #4083e1;
+  }
+  .secondary{
+    background-color: #16478b;
+  }
+  .accent{
+    background-color: #1a55a7;
+  }
+  .background{
+    background-color: #deeafa;
+  }
+  .text{
+    background-color: black;
+  }

@@ -7,6 +7,7 @@
     <meta property="og:title" content="IF Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:description" content="A open project to get buisnesses of Idaho Falls together to help each buisness grow together.">
+    <meta name="author" content="Spencer Barbre">
     <title>IF Chamber of Commerce</title>
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
@@ -43,26 +44,54 @@
     color:#1a237e !important}
     </style>
     <main>
-        <h1>Welcome to My Website</h1>  
+        <h1>Site Plan for Chamber of Commerce</h1>  
     </main>
+    <section>
+        <h2>Site Name</h2>
+        <p>Idaho Falls Chamber of Commerce</p>
+    </section>
+   
+    <section>
+        <h2>Purpose</h2>
+        <p>A open project to get buisnesses of Idaho Falls together to help each buisness grow together.</p>
+    </section>
+    <section>
+        <h2>Scenarios</h2>
+        <h3>Scenario 1: Welcome</h3>
+        <p>This is a simple welcome message.</p>
+    
+        <h3>Scenario 2: Interaction Required</h3>
+        <p>Click the button below to reveal more content.</p>
+        <button onclick="showScenario()">Click Me!</button>
+        <p id="moreContent" style="display:none;">Here’s some additional content revealed after clicking the button.</p>
+        <script>
+        function showScenario() {
+          document.getElementById('moreContent').style.display = 'block';
+        }
+    </script>
+    </section>
+    <section>
+        <h2>Color Schema</h2>
+        <div class = "box primary"></div>
+        <div class = "box secondary"></div>
+        <div class = "box accent"></div>
+        <div class = "box background"></div>
+        <div class = "box text"></div>
+    </section>
+    <section>
+        <h2>Typography</h2>
+        <p>font-family: "Veranda", Arial, sans-serif;</p>
+    </section>
+    <section>
+        <h2>Wireframe</h2>
+        <a href="https://wireframe.cc/wu2aMs">My Wireframe</a>
 
-    <h2>Scenario 1: Welcome</h2>
-    <p>This is a simple welcome message.</p>
-
-    <h2>Scenario 2: Interaction Required</h2>
-    <p>Click the button below to reveal more content.</p>
-    <button onclick="showScenario()">Click Me!</button>
-    <p id="moreContent" style="display:none;">Here’s some additional content revealed after clicking the button.</p>
-    <script>
-    function showScenario() {
-      document.getElementById('moreContent').style.display = 'block';
-    }
-  </script>
+    </section>
+  
   <br>
   <br>
 
-  <a href="https://wireframe.cc/wu2aMs">My Wireframe</a>
-
+  
     <script src="index.js"></script>
   </body>
 </html>
