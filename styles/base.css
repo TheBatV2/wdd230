@@ -32,7 +32,7 @@ main {
     content:"☰";
     
 }
-#menu.open::before {
+#menu.show::before {
 	content: "✖";
 }
 
@@ -58,7 +58,7 @@ main {
     color: white;
     background-color: #000;
 }
-.open a{
+.show a{
     display: block;
 }
 #menu.open::before{
