@@ -1,4 +1,88 @@
-.hero-image{
-    display: block;
+.hero{
+    
+    height: auto;
     margin: 0 auto;
+    width: 100vw;
+}
+html{
+    background-color: #4083e1;
+    color:white;
+    
+}
+h1, h3, p{
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+.center{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+h1{
+    font-size: 200%;
+}
+header{
+    padding-top: 30px;
+}
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: #16478b;
+    color: white;
+        
+    
+}
+#menu::before{
+    content:"☰";
+    
+}
+#menu.show::before {
+	content: "✖";
+}
+
+.navbar{
+    display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	list-style: none;
+
+}
+
+
+.navbar a {
+    display: none;
+    padding:0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+   
+
+}
+.navbar a:hover, .navbar a:active {
+    color: white;
+    background-color: #1a55a7;
+}
+.show a{
+    display: block;
+}
+#menu.open::before{
+    content: "X";
+}
+
+@media (min-width: 40em){
+    .navbar{
+        display: flex;
+    }
+    .navbar li{
+        display:block;
+        flex: 1 1 100%;
+    }
+    .navbar a {
+        text-align: center;
+    }
+    #menu{
+        display:none;
+    }
 }

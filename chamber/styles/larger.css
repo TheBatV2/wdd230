@@ -1,0 +1,48 @@
+@media screen and (min-width: 800px){#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+    .hero{
+        
+        height: auto;
+        margin: 0 auto;
+        width: 100vw;
+    }
+    html{
+        background-color: #4083e1;
+        color:white;
+        
+    }
+    h1, h3, p{
+        text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    }
+    .center{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    h1{
+        font-size: 200%;
+    }
+    header{
+        padding-top: 30px;
+    }
+    .navbar {
+        display: flex;
+        
+        justify-content: center;
+    
+        text-align: center;
+        
+        margin: 10px;
+        font-size: large;
+        
+        
+        
+    }
+
+    .navbar a{
+        border: 1px solid black;
+    }
+
+}
