@@ -9,7 +9,7 @@ html{
     color:white;
     
 }
-h1, h3, p{
+h1, h2, h3, p{
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 .center{
