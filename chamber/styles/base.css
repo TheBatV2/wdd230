@@ -1,8 +1,9 @@
 .hero{
-    
-    height: auto;
-    margin: 0 auto;
-    width: 100vw;
+    display: block;
+    float: right;
+    height: auto;  
+    width: auto;
+    max-width: 100%;
 }
 html{
     background-color: #4083e1;
@@ -85,4 +86,19 @@ header{
     #menu{
         display:none;
     }
+}
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+}
+main {
+	margin: 0;
+	
+	padding: 1rem;
+	width: auto;
+	
 }
