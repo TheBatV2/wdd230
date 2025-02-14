@@ -7,7 +7,7 @@
 }
 html{
     background-color: #4083e1;
-    color:white;
+    color:grey;
     
 }
 h1, h2, h3, p{
@@ -31,7 +31,7 @@ header{
     text-decoration: none;
     padding: .5rem .75rem;
     background-color: #16478b;
-    color: white;
+    color: grey;
         
     
 }

@@ -1,3 +1,4 @@
+@media (min-width: 40em){
 #content {
    
     margin: 0 auto;
@@ -23,8 +24,8 @@ main {
     font-weight: 700;
     text-decoration: none;
     padding: .5rem .75rem;
-    background-color: #eee;
-    color: #000;
+    background-color: #9f4fee;
+    color: ivory;
         
     
 }
@@ -56,7 +57,7 @@ main {
 }
 .navbar a:hover, .navbar a:active {
     color: white;
-    background-color: #000;
+    background-color: rebeccapurple;
 }
 .show a{
     display: block;
@@ -65,7 +66,7 @@ main {
     content: "X";
 }
 
-@media (min-width: 40em){
+
     .navbar{
         display: flex;
     }
@@ -79,7 +80,18 @@ main {
     #menu{
         display:none;
     }
-}
+    .herolabel {
+        position: absolute;
+        top: 130px;
+        left: 30px;
+        background: radial-gradient(#fff, #707fd4);
+        border: 1px solid rgba(0,0,0,.75);
+        padding: 1.5rem;
+        box-shadow: 0 0 3rem #fff;
+        opacity: 0.75;
+        /* Buenas */
+    }
+
 
 #intropic {
     padding: 10px;
@@ -108,4 +120,40 @@ h2, h3 {
 footer {
     text-align: center;
 }
+html{
+    background-color: #9f4fee;
+}
 
+#la a:hover, #la a:active{
+    color: white;
+
+}
+#la a{
+    color:black;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.herolabel {
+    position: absolute;
+    top: 1030px;
+    left: 30px;
+    background: radial-gradient(#fff, #707fd4);
+    border: 1px solid rgba(0,0,0,.75);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+    /* Buenas */
+}
+
+.herolabel p {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family:"Great Vibes", serif;
+}
+}
