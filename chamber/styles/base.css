@@ -102,3 +102,10 @@ main {
 	width: auto;
 	
 }
+#temperature, #windspeed, #windchill{
+    color:yellow;
+    
+}
+.weather{
+    font-size: 1.2em;
+}
