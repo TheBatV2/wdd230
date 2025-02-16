@@ -1,4 +1,4 @@
-@media (min-width: 40em){
+@media (max-width: 800px){
 #content {
    
     margin: 0 auto;
@@ -18,7 +18,7 @@ main {
     
 }
 
-#menu {
+.hamburger {
     display: block;
     font-size: 2rem;
     font-weight: 700;
@@ -29,11 +29,11 @@ main {
         
     
 }
-#menu::before{
+.hamburger::before{
     content:"☰";
     
 }
-#menu.show::before {
+.hamburger.show::before {
 	content: "✖";
 }
 
@@ -63,7 +63,7 @@ main {
 .show a{
     display: block;
 }
-#menu.open::before{
+.hamburger.open::before{
     content: "X";
 }
 
@@ -78,9 +78,7 @@ main {
     .navbar a {
         text-align: center;
     }
-    #menu{
-        display:none;
-    }
+    
     .herolabel {
         position: absolute;
         top: 130px;

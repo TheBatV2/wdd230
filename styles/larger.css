@@ -7,6 +7,10 @@
         font-family: "Veranda", Arial, sans-serif;
 
     }
+    html{
+        background-color: #9f4fee;
+        color: white;
+    }
     main {
         display:grid;
         max-width:100%;
@@ -100,6 +104,7 @@
     padding: 1.5rem;
     box-shadow: 0 0 3rem #fff;
     opacity: 0.75;
+    color:#000;
     /* Buenas */
 }
 
@@ -109,4 +114,7 @@
     font-weight: 700;
     font-size: 1.5rem;
     font-family:"Great Vibes", serif;
+}
+.hamburger{
+    display: none;
 }
