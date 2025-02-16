@@ -29,12 +29,17 @@
         width: 100%;
         height: auto;
       }
-    .nav-container{
-        display:flex;
-        justify-content: space-evenly;
+    .navbar{
+        display:grid;
+        grid-template-columns: repeat(5, auto);
+        gap:10px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        
     }
     .navbar li{
-        display: inline-block;   
+        padding:15px;  
 
     }
     
@@ -88,10 +93,10 @@
 
 .herolabel {
     position: absolute;
-    top: 580px;
+    top: 400px;
     left: 30px;
     background: radial-gradient(#fff, #707fd4);
-    border: 1px solid rgba(0,0,0,.75);
+    border: 1px solid silver;
     padding: 1.5rem;
     box-shadow: 0 0 3rem #fff;
     opacity: 0.75;

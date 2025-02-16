@@ -1,6 +1,6 @@
 
 function hmenu (){
-const hamButton = document.querySelector('#menu');
+const hamButton = document.querySelector('.hamburger');
 const mainnav = document.querySelector('.navbar');
 
 hamButton.addEventListener('click', () => {

@@ -28,21 +28,58 @@
         padding-top: 30px;
     }
     .navbar {
-        display: flex;
+        display:grid;
+        grid-template-columns: repeat(5, auto);
+        gap:10px;
+        list-style: none;
+        padding: 0;
+        margin: 0;        
         
-        justify-content: center;
+    }
+    .navbar a {
+        
+        padding:1rem;
+        text-align: left;
+        text-decoration: none;
+        color: white;
     
-        text-align: center;
-        
-        margin: 10px;
-        font-size: large;
-        
-        
-        
-    }
 
-    .navbar a{
-        border: 1px solid black;
     }
+    .navbar a:hover, .navbar a:active {
+        color: white;
+        background-color: #1a55a7;
+    }
+    #mode {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 3rem;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+    main {
+        margin: 0;
+        
+        padding: 1rem;
+        width: auto;
+        
+    }
+    #temperature, #windspeed, #windchill{
+        color:yellow;
+        
+    }
+    .weather{
+        font-size: 1.2em;
+    }
+ 
+
+    .hero img {
+        width: 100%;
+        height: auto;
+      }
+      .hamburger{
+        display: none;
+      }
+
 
 }

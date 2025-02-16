@@ -39,6 +39,7 @@ main {
 
 .navbar{
     display: flex;
+    list-style: none;
 	flex-direction: column;
 	justify-content: space-around;
 	list-style: none;

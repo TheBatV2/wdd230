@@ -6,11 +6,11 @@
         <meta name="author" content="Spencer Barbre">
         <meta name="description" content="This is the homepage for the Idaho Falls Chamber of Commerce">
         <title>Idaho Falls Chamber of Commerce</title>
-        <link rel="icon" href="images/favicon_io/favicon-16x16.png">
+        <link rel="icon" href="images/favicon-16x16.webp">
         <meta property="og:title" content="Idaho Falls Chamber of Commerce">
         <meta property="og:type" content="website">
         <meta property="og:description" content="This is the homepage for the Idaho Falls Chamber of Commerce">
-        <meta property="og:image" content="https://thebatv2.github.io/wdd230/chamber/images/Hero16-9IF.png">
+        <meta property="og:image" content="https://thebatv2.github.io/wdd230/chamber/images/Hero16-9IFoptlarge.webp">
         <meta property="og:url" content="https://thebatv2.github.io/wdd230/chamber/">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/base.css">
@@ -25,8 +25,8 @@
     <header class = "center header">
         <h1>Welcome to the Idaho Falls<br> Chamber of Commerce!</h1>
     
-    <button type="button" id="menu"></button>
-    <nav>
+    <button type="button" class="hamburger"></button>
+    <nav class="nav">
         <ul class="navbar">
             <li><a href="#">Home</a></li>
             <li><a href="#">Join Us!</a></li>
@@ -42,7 +42,11 @@
     
         <main>
         <div class="hero">
-            <img src="images/Hero16-9IF.png" alt="IF CHAMBER OF COMMERCE">
+            <picture>
+                <source srcset="images/small.webp" media="(max-width: 500px)">
+                <source srcset="images/medium.webp" media="(max-width: 1000px)">
+                <img src="images/large.webp" alt="Idaho Falls Chamber of Commerce" width="1500" height="750">
+            </picture>
         </div>
         <div>
             <p>Come Join our Community Chamber of Commerce, Expand and Grow with us!</p>
