@@ -1,0 +1,16 @@
+document.addEventListener("DOMContentLoaded", function () {
+    // Retrieve the current visit count from localStorage
+    let visitCount = localStorage.getItem("pageVisits");
+
+    // Convert visitCount to an integer and increment it
+    visitCount = visitCount ? parseInt(visitCount) + 1 : 1;
+
+    // Store the updated count back to localStorage
+    localStorage.setItem("pageVisits", visitCount);
+
+    // Display the updated count in the page
+    let visitCountElement = document.getElementById("visit-count");
+    if (visitCountElement) {
+        visitCountElement.textContent = visitCount;
+    }
+});
