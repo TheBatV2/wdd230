@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/larger.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <script src="scripts/hmenu.js"></script>
+        <script src="scripts/lastVisit.js"></script>
        
         
     </head>
@@ -29,7 +29,6 @@
     <nav class="nav">
         <ul class="navbar">
             <li><a href="https://thebatv2.github.io/wdd230/">Home</a></li>
-            <li><a href="discover.html">Discover Idaho Falls</a></li>
             <li><a href="#">Join Us!</a></li>
             <li><a href="#">Current News</a></li>
             <li><a href="#">Spotlights</a></li>
@@ -41,34 +40,25 @@
     </div>
     </header>
     
-        <main>
-        <div class="hero">
-            <picture>
-                <source srcset="images/small.webp" media="(max-width: 500px)">
-                <source srcset="images/medium.webp" media="(max-width: 1000px)">
-                <img src="images/large.webp" alt="Idaho Falls Chamber of Commerce" width="1500" height="750">
-            </picture>
-        </div>
-        <div>
-            <p>Come Join our Community Chamber of Commerce, Expand and Grow with us!</p>
-            <button class ="btn">Join Us!</button>
-        </div>
-        <h2>Our Community</h2>
-        <div>
-            <h3>What is happening? Current events!</h3>
-        </div>
-        <div>
-            <h3>What is the Weather?</h3>
-            <div class="weather">
-                <p>Temperature: <span id="temperature">45</span> °F  🌡</p>
-                <p>Wind Speed: <span id="windspeed">10</span> mph  💨</p>
-                <p>Wind Chill: <span id="windchill">N/A</span>  🥶</p>
-
-            </div>
-        </div>
-        <div>
-            <h3>Spotlights of the Month</h3>
-        </div>
+    <main class="grid-container">
+        <aside class="sidebar">
+            <h2>Welcome Message</h2>
+            <p id="visitMessage">Checking last visit...</p>
+            <h2>Local Events</h2>
+            <ul>
+                <li>Farmers Market - Saturdays</li>
+                <li>Annual Parade - March 15</li>
+                <li>Music Festival - June 10</li>
+            </ul>
+        </aside>
+        <section class="gallery">
+            <img src="image1.jpg" alt="Local attraction 1" loading="lazy">
+            <img src="image2.jpg" alt="Local attraction 2" loading="lazy">
+            <img src="image3.jpg" alt="Local attraction 3" loading="lazy">
+            <img src="image4.jpg" alt="Local attraction 4" loading="lazy">
+            <img src="image5.jpg" alt="Local attraction 5" loading="lazy">
+            <img src="image6.jpg" alt="Local attraction 6" loading="lazy">
+        </section>
         </main>
         
         <footer>
@@ -77,3 +67,5 @@
         <script src="scripts/windchill.js"></script>   
     </body>
 </html>
+
+
