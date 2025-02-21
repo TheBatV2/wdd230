@@ -80,6 +80,17 @@
       .hamburger{
         display: none;
       }
-
+      #visitMessage {
+        font-size: 1.2em;
+        color: white;
+        background-color: #1a55a7;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        margin: 20px auto;
+        width: 80%;
+        max-width: 400px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
 
 }
