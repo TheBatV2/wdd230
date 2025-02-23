@@ -114,4 +114,7 @@
         width: 100%;
         height: auto;
     }
+    .gallery {
+        grid-template-columns: 1fr; /* Single column */
+    }
 }
