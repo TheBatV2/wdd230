@@ -1,0 +1,403 @@
+/* Root variables for consistency */
+:root {
+    --primary-bg: #4083e1;  /* Original blue background */
+    --secondary-bg: #1a55a7; /* Darker blue */
+    --text-color: white;     /* White text */
+    --error-color: #e74c3c;  /* Red error messages */
+    --success-color: #27ae60; /* Green success message */
+}
+
+/* General styles */
+html {
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1.5rem;
+}
+
+/* Form container */
+main {
+    background: rgba(255, 255, 255, 0.1); /* Slight transparency */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Form labels */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Form inputs */
+form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Accessibility: Add focus styles */
+form input:focus {
+    border-color: var(--secondary-bg);
+    outline: none;
+    box-shadow: 0 0 5px var(--secondary-bg);
+}
+
+/* Submit button */
+button[type="submit"] {
+    background-color: var(--secondary-bg);
+    color: var(--text-color);
+    border: none;
+    padding: 0.8rem;
+    width: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #154a8e; /* Slightly darker blue */
+}
+
+/* Error message */
+#error-message {
+    color: var(--error-color);
+    font-weight: bold;
+    display: none;
+    text-align: center;
+}
+
+.success-container {
+    background: rgba(255, 255, 255, 0.1); /* Light transparent background */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    margin: 50px auto; /* Centering with space from top */
+    margin-top: 200rem;
+}
+
+.success-message {
+    color: var(--success-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 0px white, -2px -2px 0px white, 2px -2px 0px white, -2px 2px 0px white;
+}
+
+@media screen and (min-width: 800px) {
+    #content {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    .hero {
+        height: auto;
+        margin: 0 auto;
+        width: 100vw;
+    }
+
+    h1, h3, p {
+        text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    }
+
+    .center {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 200%;
+    }
+
+    header {
+        padding-top: 30px;
+    }
+
+    .navbar {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        gap: 10px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar a {
+        padding: 1rem;
+        text-align: left;
+        text-decoration: none;
+        color: white;
+    }
+
+    .navbar a:hover, .navbar a:active {
+        color: white;
+        background-color: var(--secondary-bg);
+    }
+
+    #mode {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 3rem;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+
+    #temperature, #windspeed, #windchill {
+        color: yellow;
+    }
+
+    .weather {
+        font-size: 1.2em;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    #visitMessage {
+        font-size: 1.2em;
+        color: white;
+        background-color: var(--secondary-bg);
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        margin: 20px auto;
+        width: 80%;
+        max-width: 400px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* Sidebar and main content ratio */
+        grid-template-rows: auto 1fr auto; /* Header, content, footer */
+        height: 100vh;
+    }
+}
+/* Root variables for consistency */
+:root {
+    --primary-bg: #4083e1;  
+    --secondary-bg: #1a55a7;
+    --text-color: white;     
+    --error-color: #e74c3c; 
+    --success-color: #27ae60; 
+}
+/* General styles */
+html {
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1.5rem;
+}
+
+/* Form container */
+main {
+    background: rgba(255, 255, 255, 0.1); /* Slight transparency */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Form labels */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Form inputs */
+form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Accessibility: Add focus styles */
+form input:focus {
+    border-color: var(--secondary-bg);
+    outline: none;
+    box-shadow: 0 0 5px var(--secondary-bg);
+}
+
+/* Submit button */
+button[type="submit"] {
+    background-color: var(--secondary-bg);
+    color: var(--text-color);
+    border: none;
+    padding: 0.8rem;
+    width: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #154a8e; /* Slightly darker blue */
+}
+
+/* Error message */
+#error-message {
+    color: var(--error-color);
+    font-weight: bold;
+    display: none;
+    text-align: center;
+}
+
+.success-container {
+    background: rgba(255, 255, 255, 0.1); /* Light transparent background */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    margin: 50px auto; /* Centering with space from top */
+    margin-top: 200rem;
+}
+
+.success-message {
+    color: var(--success-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 0px white, -2px -2px 0px white, 2px -2px 0px white, -2px 2px 0px white;
+}
+
+@media screen and (min-width: 800px) {
+    #content {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    .hero {
+        height: auto;
+        margin: 0 auto;
+        width: 100vw;
+    }
+
+    h1, h3, p {
+        text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    }
+
+    .center {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 200%;
+    }
+
+    header {
+        padding-top: 30px;
+    }
+
+    .navbar {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        gap: 10px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar a {
+        padding: 1rem;
+        text-align: left;
+        text-decoration: none;
+        color: white;
+    }
+
+    .navbar a:hover, .navbar a:active {
+        color: white;
+        background-color: var(--secondary-bg);
+    }
+
+    #mode {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 3rem;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+
+    #temperature, #windspeed, #windchill {
+        color: yellow;
+    }
+
+    .weather {
+        font-size: 1.2em;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    #visitMessage {
+        font-size: 1.2em;
+        color: white;
+        background-color: var(--secondary-bg);
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        margin: 20px auto;
+        width: 80%;
+        max-width: 400px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* Sidebar and main content ratio */
+        grid-template-rows: auto 1fr auto; /* Header, content, footer */
+        height: 100vh;
+    }
+}

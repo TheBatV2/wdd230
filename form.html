@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Spencer Barbre">
+        <meta name="description" content="This is the homepage for the Idaho Falls Chamber of Commerce">
+        <title>Idaho Falls Chamber of Commerce</title>
+        <link rel="icon" href="images/favicon-16x16.webp">
+        <meta property="og:title" content="Idaho Falls Chamber of Commerce">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="This is the homepage for the Idaho Falls Chamber of Commerce">
+        <meta property="og:image" content="https://thebatv2.github.io/wdd230/chamber/images/Hero16-9IFoptlarge.webp">
+        <meta property="og:url" content="https://thebatv2.github.io/wdd230/chamber/">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/form.css">
+     
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      
+        
+       
+        
+    </head>
+    <body>
+        <header id="headermain">
+            <img id="intropic" src="images/DSC_0482.jpg" alt="Photo of me and Steph" width="600" height="500">
+            <h1>Spencer Barbre</h1>
+        </header>
+        <button type="button" class="hamburger"></button>
+        <nav class="nav-container"> 
+            
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+                <li><a href="chamber/index.html">Chamber</a></li>
+                <li><a href="https://www.byui.edu/">BYU-Idaho</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/10?lang=eng">Scripture</a></li>
+            </ul>
+        </nav>  
+    <div id="mode">
+        🌘
+    </div>
+    </header>
+    <main>
+        <form method="get">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            <p id="error-message" style="color: red; display: none;">Passwords do not match. Please try again.</p>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@byui\.edu$" title="A valid byui.edu email address." required>
+
+            <label for="rating">Page Rating:</label>
+            <input type="range" id="rating" name="rating" min="1" max="10" step="1" oninput="this.nextElementSibling.value = this.value">
+            <output>5</output>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <section id="submission-results" style="display:none;">
+            <h2>Form Submission Details</h2>
+            <ul id="form-data"></ul>
+        </section>
+    </main>
+   
+
+        
+    <footer>
+        <p>
+            &copy; 2025,  Spencer Barbre, Idaho, United States of America.  	
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+        <script src="scripts/windchill.js"></script>   
+        <script src="scripts/validatePasswords.js"></script>
+        <script src="scripts/hmenu.js"></script>
+    </body>
+</html>
