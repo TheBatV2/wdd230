@@ -17,8 +17,9 @@
         <link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/larger.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <script src="scripts/lastVisit.js"></script>
-        <script src="scripts/hmenu.js"></script>
+      
+        
+       
         
     </head>
     <body>
@@ -29,6 +30,7 @@
     <nav class="nav">
         <ul class="navbar">
             <li><a href="https://thebatv2.github.io/wdd230/">Home</a></li>
+            <li><a href="discover.html">Discover Idaho Falls</a></li>
             <li><a href="join.html">Join Us!</a></li>
             <li><a href="#">Current News</a></li>
             <li><a href="#">Spotlights</a></li>
@@ -39,35 +41,40 @@
         🌘
     </div>
     </header>
-    
-    <main class="grid-container">
-        <aside class="sidebar">
-            <h2>Welcome Message</h2>
-            <p id="visitMessage">Checking last visit...</p>
+    <main>
+        <form method="get">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            <p id="error-message" style="color: red; display: none;">Passwords do not match. Please try again.</p>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@byui\.edu$" title="A valid byui.edu email address." required>
+
+            <label for="rating">Page Rating:</label>
+            <input type="range" id="rating" name="rating" min="1" max="10" step="1" oninput="this.nextElementSibling.value = this.value">
+            <output>5</output>
             
-            
-            <h2>Local Events</h2>
-            <ul>
-                <li>Farmers Market - Saturdays</li>
-                <li>Annual Parade - March 15</li>
-                <li>Music Festival - June 10</li>
-            </ul>
-        </aside>
-        <section class="gallery">
-            <img src="discover/images/img1.webp" alt="Downtown early morning" loading="lazy">
-            <img src="discover/images/img2.webp" alt="City Hall" loading="lazy">
-            <img src="discover/images/img3.webp" alt="Temple Across the River" loading="lazy">
-            <img src="discover/images/img4.webp" alt="Welcome to town sign" loading="lazy">
-            <img src="discover/images/img5.webp" alt="Downtown in the Evening" loading="lazy">
-            <img src="discover/images/img6.webp" alt="Greenbelt with Temple" loading="lazy">
+            <button type="submit">Submit</button>
+        </form>
+        <section id="submission-results" style="display:none;">
+            <h2>Form Submission Details</h2>
+            <ul id="form-data"></ul>
         </section>
-        </main>
+    </main>
+   
+
         
         <footer>
             <p></p>
         </footer> 
         <script src="scripts/windchill.js"></script>   
+        <script src="scripts/validatePasswords.js"></script>
+        <script src="scripts/hmenu.js"></script>
     </body>
 </html>
-
-
