@@ -42,29 +42,37 @@
     </div>
     </header>
     <main>
-        <form method="get">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" required>
-
-            <label for="confirm-password">Confirm Password:</label>
-            <input type="password" id="confirm-password" name="confirm-password" required>
-            <p id="error-message" style="color: red; display: none;">Passwords do not match. Please try again.</p>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@byui\.edu$" title="A valid byui.edu email address." required>
-
-            <label for="rating">Page Rating:</label>
-            <input type="range" id="rating" name="rating" min="1" max="10" step="1" oninput="this.nextElementSibling.value = this.value">
-            <output>5</output>
-            
-            <button type="submit">Submit</button>
-        </form>
-        <section id="submission-results" style="display:none;">
-            <h2>Form Submission Details</h2>
-            <ul id="form-data"></ul>
+        <section class="form-container">
+            <form action="thankyou.html" method="get">
+                <label for="first-name">First Name: <input type="text" id="first-name" name="first-name" required></label>
+                <label for="last-name">Last Name: <input type="text" id="last-name" name="last-name" required></label>
+                <label for="position">Title/Position: <input type="text" id="position" name="position" pattern="[A-Za-z\-\s]{7,}" required></label>
+                <label for="email">Email: <input type="email" id="email" name="email" placeholder="example@domain.com" required></label>
+                <label for="phone">Mobile Phone: <input type="tel" id="phone" name="phone" required></label>
+                <label for="organization">Business/Organization Name: <input type="text" id="organization" name="organization" required></label>
+                <label for="membership">Membership Level:
+                    <select id="membership" name="membership">
+                        <option value="np">NP Membership (No Fee)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+                <label for="description">Business/Organization Description:
+                    <textarea id="description" name="description"></textarea>
+                </label>
+                <input type="hidden" id="timestamp" name="timestamp">
+                <button type="submit">Submit Application</button>
+            </form>
+            <aside class="membership-benefits">
+                <h2>Membership Benefits</h2>
+                <ul>
+                    <li><strong>NP Membership:</strong> Basic listing, community events.</li>
+                    <li><strong>Bronze:</strong> Includes NP benefits, small event discounts.</li>
+                    <li><strong>Silver:</strong> Includes Bronze benefits, increased advertising.</li>
+                    <li><strong>Gold:</strong> All benefits, premium promotions, training access.</li>
+                </ul>
+            </aside>
         </section>
     </main>
    
@@ -74,7 +82,8 @@
             <p></p>
         </footer> 
         <script src="scripts/windchill.js"></script>   
-        <script src="scripts/validatePasswords.js"></script>
+        <script src="scripts/loadForm.js"></script>
         <script src="scripts/hmenu.js"></script>
+        <script>document.getElementById('timestamp').value = Date.now();</script>
     </body>
 </html>
