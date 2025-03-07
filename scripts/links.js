@@ -1,50 +1,56 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const baseUrl = "https://thebatv2.github.io/wdd230/";
     const linksURL = "https://thebatv2.github.io/wdd230/data/links.json";
 
     // Function to fetch the links data
     async function getLinks() {
         try {
-            const response = await fetch(linksURL);  // Fetch the JSON data from the URL
+            const response = await fetch(linksURL);
             if (!response.ok) {
-                throw new Error('Network response was not ok');
+                throw new Error("Failed to fetch data");
             }
-            const data = await response.json();  // Parse the response as JSON
-            console.log(data);  // Log the fetched data to check its structure
-            displayLinks(data.lessons);  // Access the 'lessons' array
+            const data = await response.json();
+            // Call the displayLinks function with the data
+            displayLinks(data.lessons);
+            return data;
         } catch (error) {
-            console.error('There was a problem with the fetch operation:', error);
+            console.error("Error fetching data:", error);
         }
     }
 
     // Function to display the links
-    function displayLinks(lessons) {
-        const linksContainer = document.getElementById("la");  // Ensure this ID exists in your HTML
-        linksContainer.innerHTML = "";  // Clear any existing content
+    const displayLinks = (lessons) => {
+        const listContainer = document.querySelector("la");  // Make sure the la element exists
+        if (!listContainer) {
+            console.error("Element with class of la not found");
+            return;
+        }
 
-        lessons.forEach(lesson => {
-            const lessonSection = document.createElement("section");
-            const lessonTitle = document.createElement("h3");
-            lessonTitle.textContent = `Lesson ${lesson.lesson}`;
-            lessonSection.appendChild(lessonTitle);
+        lessons.forEach((lesson) => {
+            const listItem = document.createElement("li");
 
-            const list = document.createElement("ul");
-            lesson.links.forEach(link => {
-                const listItem = document.createElement("li");
-                const anchor = document.createElement("a");
-                anchor.href = link.url;
-                anchor.textContent = link.title;
-                anchor.target = "_blank";
-                listItem.appendChild(anchor);
-                list.appendChild(listItem);
+            const lessonTitle = document.createTextNode(`Lesson ${lesson.lesson}: `);
+            listItem.appendChild(lessonTitle);
+
+            lesson.links.forEach((link, index) => {
+                const tag = document.createElement("a");
+                tag.setAttribute("href", link.url);
+                tag.textContent = link.title;
+
+                listItem.appendChild(tag);
+
+                // Add separator ("|") between links, but not after the last one
+                if (lesson.links.length > 1 && index < lesson.links.length - 1) {
+                    listItem.appendChild(document.createTextNode(" | "));
+                }
             });
 
-            lessonSection.appendChild(list);
-            linksContainer.appendChild(lessonSection);
+            // Append the list item to the list container
+            listContainer.appendChild(listItem);
         });
-    }
+    };
 
-    // Call the getLinks function when the script loads
+    // Call the getLinks function to fetch and display the links
     getLinks();
 });
 
