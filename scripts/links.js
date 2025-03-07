@@ -10,27 +10,26 @@ document.addEventListener("DOMContentLoaded", function() {
                 throw new Error('Network response was not ok');
             }
             const data = await response.json();  // Parse the response as JSON
-            console.log(data)
-            displayLinks(data);  // Call the function to display the links
+            console.log(data);  // Log the fetched data to check its structure
+            displayLinks(data.lessons);  // Access the 'lessons' array
         } catch (error) {
             console.error('There was a problem with the fetch operation:', error);
         }
     }
 
     // Function to display the links
-    function displayLinks(weeks) {
-        console.log(weeks);  // Log the data to see if it's correct
+    function displayLinks(lessons) {
         const linksContainer = document.getElementById("la");  // Ensure this ID exists in your HTML
         linksContainer.innerHTML = "";  // Clear any existing content
 
-        weeks.forEach(week => {
-            const weekSection = document.createElement("section");
-            const weekTitle = document.createElement("h3");
-            weekTitle.textContent = `Week ${week.week}`;
-            weekSection.appendChild(weekTitle);
+        lessons.forEach(lesson => {
+            const lessonSection = document.createElement("section");
+            const lessonTitle = document.createElement("h3");
+            lessonTitle.textContent = `Lesson ${lesson.lesson}`;
+            lessonSection.appendChild(lessonTitle);
 
             const list = document.createElement("ul");
-            week.links.forEach(link => {
+            lesson.links.forEach(link => {
                 const listItem = document.createElement("li");
                 const anchor = document.createElement("a");
                 anchor.href = link.url;
@@ -40,11 +39,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 list.appendChild(listItem);
             });
 
-            weekSection.appendChild(list);
-            linksContainer.appendChild(weekSection);
+            lessonSection.appendChild(list);
+            linksContainer.appendChild(lessonSection);
         });
     }
 
     // Call the getLinks function when the script loads
     getLinks();
 });
+
