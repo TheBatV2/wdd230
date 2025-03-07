@@ -1,0 +1,69 @@
+{
+    "lessons": [
+      
+      {
+        "lesson": "02",
+        "links": [
+          { "url": "lesson02/design-principles.html", "title": "Lesson 2 Activity 1" },
+          { "url": "lesson02/design.html", "title": "Lesson 2 Activity 2" }
+        ]
+      },
+      {
+        "lesson": "03",
+        "links": [
+          { "url": "lesson03/chamber-site-plan.html", "title": "Lesson 3 Activity 1" }
+   
+        ]
+      },
+      {
+        "lesson": "04",
+        "links": [
+          { "url": "lesson04/activity1.html", "title": "Lesson 4 Activity 1" },
+          { "url": "lesson04/activity2.html", "title": "Lesson 4 Activity 2" }
+        ]
+      },
+      {
+        "lesson": "05",
+        "links": [
+          { "url": "lesson05/activity1.html", "title": "Lesson 5 Activity 1" },
+          { "url": "lesson05/activity2.html", "title": "Lesson 5 Activity 2" }
+        ]
+      },
+      {
+        "lesson": "06",
+        "links": [
+          { "url": "lesson06/activity1.html", "title": "Lesson 6 Activity 1" },
+          { "url": "lesson06/activity2.html", "title": "Lesson 6 Activity 2" }
+        ]
+      },
+      {
+        "lesson": "07",
+        "links": [
+          { "url": "lesson07/activity1.html", "title": "Lesson 7 Activity 1" },
+          { "url": "lesson07/activity2.html", "title": "Lesson 7 Activity 2" }
+        ]
+      },
+      {
+        "lesson": "08",
+        "links": [
+          { "url": "lesson08/activity1.html", "title": "Lesson 8 Activity 1" },
+          { "url": "lesson08/activity2.html", "title": "Lesson 8 Activity 2" }
+        ]
+      },
+      {
+        "lesson": "09",
+        "links": [
+          { "url": "lesson09/activity1.html", "title": "Lesson 9 Activity 1" },
+          { "url": "lesson09/activity2.html", "title": "Lesson 9 Activity 2" }
+        ]
+      },
+      {
+        "lesson": "10",
+        "links": [
+          { "url": "lesson10/activity1.html", "title": "Lesson 10 Activity 1" },
+          { "url": "lesson10/activity2.html", "title": "Lesson 10 Activity 2" }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,29 @@
+{
+    "familyName": "Johnson",
+    "moveInDate": "2024-02-15",
+    "numberOfPeople": 4,
+    "visitedByBishopric": true,
+    "members": [
+      {
+        "name": "Michael Johnson",
+        "gender": "Male",
+        "birthdate": "1985-06-12"
+      },
+      {
+        "name": "Sarah Johnson",
+        "gender": "Female",
+        "birthdate": "1987-09-23"
+      },
+      {
+        "name": "Emma Johnson",
+        "gender": "Female",
+        "birthdate": "2015-04-08"
+      },
+      {
+        "name": "Noah Johnson",
+        "gender": "Male",
+        "birthdate": "2018-11-30"
+      }
+    ]
+  }
+  
