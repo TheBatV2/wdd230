@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to display the links
     const displayLinks = (lessons) => {
-        const listContainer = document.querySelector("la");  // Make sure the la element exists
+        const listContainer = document.querySelector(".la");  // Make sure the la element exists
         if (!listContainer) {
             console.error("Element with class of la not found");
             return;
