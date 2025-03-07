@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 throw new Error('Network response was not ok');
             }
             const data = await response.json();  // Parse the response as JSON
+            console.log(data)
             displayLinks(data);  // Call the function to display the links
         } catch (error) {
             console.error('There was a problem with the fetch operation:', error);
