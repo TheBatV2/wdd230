@@ -4,56 +4,58 @@
       {
         "lesson": "02",
         "links": [
-          { "url": "lesson02/design-principles.html", "title": "Lesson 2 Activity 1" },
-          { "url": "lesson02/design.html", "title": "Lesson 2 Activity 2" }
+          { "url": "lesson02/design-principles.html", "title": "Web Design Principles" },
+          { "url": "lesson02/design.html", "title": "L02: Design Principles Document" }
         ]
       },
       {
         "lesson": "03",
         "links": [
-          { "url": "lesson03/chamber-site-plan.html", "title": "Lesson 3 Activity 1" }
+          { "url": "lesson03/chamber-site-plan.html", "title": "L03: Project Milestone - The Chamber of Commerce Site Plan" },
+          { "url": "images/css_combinators.png", "title": "CSS Combinators" },
+          { "url": "https://codepen.io/Spencer-Barbre/pen/mybzxZY", "title": "CSS Pseudo-elements" },
+          { "url": "https://codepen.io/blazzard-jason/pen/BaOwMvg", "title": "Responsive Hamburger Menu" }
    
         ]
       },
       {
         "lesson": "04",
         "links": [
-          { "url": "lesson04/activity1.html", "title": "Lesson 4 Activity 1" },
-          { "url": "lesson04/activity2.html", "title": "Lesson 4 Activity 2" }
+      
         ]
       },
       {
         "lesson": "05",
         "links": [
-          { "url": "lesson05/activity1.html", "title": "Lesson 5 Activity 1" },
-          { "url": "lesson05/activity2.html", "title": "Lesson 5 Activity 2" }
+          { "url": "lesson05/bom.html", "title": "05: Book of Mormon Favorite Chapters Application" }
+
         ]
       },
       {
         "lesson": "06",
         "links": [
-          { "url": "lesson06/activity1.html", "title": "Lesson 6 Activity 1" },
-          { "url": "lesson06/activity2.html", "title": "Lesson 6 Activity 2" }
+          { "url": "images/landscape.webp", "title": "WebP" },
+          { "url": "lesson06/responsive-images.html", "title": "Responsive Images Assignment" }
         ]
       },
       {
         "lesson": "07",
         "links": [
-          { "url": "lesson07/activity1.html", "title": "Lesson 7 Activity 1" },
-          { "url": "lesson07/activity2.html", "title": "Lesson 7 Activity 2" }
+          { "url": "lesson07/index.html", "title": "Lazy Load Assignment" },
+          { "url": "lesson07/BOM/bom.html", "title": "BOM Assignment Updated" }
         ]
       },
       {
         "lesson": "08",
         "links": [
-          { "url": "lesson08/activity1.html", "title": "Lesson 8 Activity 1" },
-          { "url": "lesson08/activity2.html", "title": "Lesson 8 Activity 2" }
+          { "url": "lesson08/tablebuild.html", "title": "Table Build assignment" },
+          { "url": "form.html", "title": "Form assignment" }
         ]
       },
       {
         "lesson": "09",
         "links": [
-          { "url": "lesson09/activity1.html", "title": "Lesson 9 Activity 1" },
+          { "url": "lesson09/new-ward-members.json", "title": "Json assignment" },
           { "url": "lesson09/activity2.html", "title": "Lesson 9 Activity 2" }
         ]
       },
@@ -64,6 +66,9 @@
           { "url": "lesson10/activity2.html", "title": "Lesson 10 Activity 2" }
         ]
       }
+      
+
+
     ]
   }
   
