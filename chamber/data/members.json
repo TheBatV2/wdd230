@@ -1,0 +1,61 @@
+{
+    "members": [
+      {
+        "name": "Acme Tech Solutions",
+        "address": "123 Innovation Drive, Idaho Falls, ID",
+        "phone": "(555) 123-4567",
+        "website": "https://acmetech.com",
+        "image": "images/acme-tech-logo.webp",
+        "membership": "Gold"
+      },
+      {
+        "name": "Green Earth Landscaping",
+        "address": "456 Garden Lane, Idaho Falls, ID",
+        "phone": "(555) 234-5678",
+        "website": "https://greenearth.com",
+        "image": "images/Green-Earth-Landscaping.webp",
+        "membership": "Silver"
+      },
+      {
+        "name": "Sunrise Bakery",
+        "address": "789 Main St, Idaho Falls, ID",
+        "phone": "(555) 345-6789",
+        "website": "https://sunrisebakery.com",
+        "image": "images/Sunrise-Bakery.webp",
+        "membership": "Bronze"
+      },
+      {
+        "name": "Oceanic Travels",
+        "address": "321 Wave Ave, Idaho Falls, ID",
+        "phone": "(555) 456-7890",
+        "website": "images/Oceanic-Travels.webp",
+        "image": "oceanic-travels-logo.png",
+        "membership": "Gold"
+      },
+      {
+        "name": "Peak Fitness Gym",
+        "address": "654 Mountain Rd, Idaho Falls, ID",
+        "phone": "(555) 567-8901",
+        "website": "images/Peak-Fitness-Gym.webp",
+        "image": "peak-fitness-logo.png",
+        "membership": "Silver"
+      },
+      {
+        "name": "City Lights Bookstore",
+        "address": "987 Book St, Idaho Falls, ID",
+        "phone": "(555) 678-9012",
+        "website": "https://citylightsbooks.com",
+        "image": "images/City-Lights-Bookstore.webp",
+        "membership": "Bronze"
+      },
+      {
+        "name": "NextGen Robotics",
+        "address": "741 AI Blvd, Idaho Falls, ID",
+        "phone": "(555) 789-0123",
+        "website": "https://nextgenrobotics.com",
+        "image": "images/NextGen-Robotics.webp",
+        "membership": "Gold"
+      }
+    ]
+  }
+  

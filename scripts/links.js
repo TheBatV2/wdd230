@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 throw new Error("Failed to fetch data");
             }
             const data = await response.json();
-            // Call the displayLinks function with the data
+           
             displayLinks(data.lessons);
             return data;
         } catch (error) {
@@ -18,9 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Function to display the links
+    
     const displayLinks = (lessons) => {
-        const listContainer = document.querySelector(".la");  // Make sure the la element exists
+        const listContainer = document.querySelector(".la");  
         if (!listContainer) {
             console.error("Element with class of la not found");
             return;
@@ -39,13 +39,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 listItem.appendChild(tag);
 
-                // Add separator ("|") between links, but not after the last one
+               
                 if (lesson.links.length > 1 && index < lesson.links.length - 1) {
                     listItem.appendChild(document.createTextNode(" | "));
                 }
             });
 
-            // Append the list item to the list container
+           
             listContainer.appendChild(listItem);
         });
     };
