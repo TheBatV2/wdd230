@@ -64,7 +64,7 @@
       {
         "lesson": "10",
         "links": [
-          { "url": "lesson10/activity1.html", "title": "Lesson 10 Activity 1" },
+          { "url": "lesson10/weather.html", "title": "Weather API Assignment" },
           { "url": "lesson10/activity2.html", "title": "Lesson 10 Activity 2" }
         ]
       }
