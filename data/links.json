@@ -11,10 +11,10 @@
       {
         "lesson": "03",
         "links": [
-          { "url": "lesson03/chamber-site-plan.html", "title": "L03: Project Milestone - The Chamber of Commerce Site Plan" },
+          { "url": "lesson03/chamber-site-plan.html", "title":"Chamber of Commerce Site Plan" },
           { "url": "images/css_combinators.png", "title": "CSS Combinators" },
           { "url": "https://codepen.io/Spencer-Barbre/pen/mybzxZY", "title": "CSS Pseudo-elements" },
-          { "url": "https://codepen.io/blazzard-jason/pen/BaOwMvg", "title": "Responsive Hamburger Menu" }
+          { "url": "https://codepen.io/blazzard-jason/pen/BaOwMvg", "title": "Hamburger Menu" }
    
         ]
       },

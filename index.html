@@ -16,8 +16,7 @@
         <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="styles/larger.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <script src="scripts/hmenu.js"></script>
-        <script src="scripts/visitorCounter"></script>
+      
         
     </head>
     <body>
@@ -39,17 +38,20 @@
          
        
         <h2 class="text-center">WDD 230: Web Frontend Development</h2>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 400px)">
+                <img src="images/hero-large.webp" alt="temple" width="960">
+            </picture>
+            <div class="herolabel">Idaho Falls Temple</div>
+        </div> 
+        
         <main>
-            <div class="hero">
-                <picture>
-                    <source srcset="images/hero-small.webp" media="(max-width: 400px)">
-                    <img src="images/hero-large.webp" alt="temple" width="960">
-                </picture>
-                <div class="herolabel">Idaho Falls Temple</div>
-            </div> 
+          
             
             <div class="la">
-            <h3 class="text-center">Learning Activities</h3>
+                <h3 class="text-center">Learning Activities</h3>
+                <ul class="learning-activities"></ul>
             </div>
 
             <section id="info">
@@ -83,6 +85,8 @@
         <script src="scripts/getdates.js"></script>
         <script src="scripts/links.js"></script>
         <script src="scripts/weather.js"></script>
+        <script src="scripts/hmenu.js"></script>
+        <script src="scripts/visitorCounter"></script>
        
             
         

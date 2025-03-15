@@ -20,9 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     
     const displayLinks = (lessons) => {
-        const listContainer = document.querySelector(".la");  
+        const listContainer = document.querySelector(".learning-activities");  
         if (!listContainer) {
-            console.error("Element with class of la not found");
+            console.error("Element with class of learning-activities not found");
             return;
         }
 
