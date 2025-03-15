@@ -154,7 +154,7 @@
         text-align: center;
     }
 
-    /* Add the following CSS to align the list items under Learning Activities */
+    
     .la {
         display: flex;
         flex-direction: column;
