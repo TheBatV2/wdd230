@@ -20,6 +20,29 @@ html, body {
 *::after {
     box-sizing: border-box;
 }
+.member-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.member-card img {
+    max-width: 200px; /* Set a maximum width for the images */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto 1rem; /* Center the image and add some margin below */
+}
+
+.grid-view .member-card {
+    display: inline-block;
+    width: calc(33.333% - 2rem);
+}
+
+.list-view .member-card {
+    display: block;
+    width: 100%;
+}
 .banner {
     background-color: var(--secondary-bg);
     color: var(--text-color);
