@@ -4,8 +4,8 @@ const hamButton = document.querySelector('.hamburger');
 const mainnav = document.querySelector('.navbar');
 
 hamButton.addEventListener('click', () => {
-    mainnav.classList.toggle('show');
-    hamButton.classList.toggle('show');
+    mainnav.classList.toggle('active');
+    hamButton.classList.toggle('active');
 });}
 
 function dmode (){

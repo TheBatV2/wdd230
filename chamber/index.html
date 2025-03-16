@@ -13,9 +13,8 @@
         <meta property="og:image" content="https://thebatv2.github.io/wdd230/chamber/images/Hero16-9IFoptlarge.webp">
         <meta property="og:url" content="https://thebatv2.github.io/wdd230/chamber/">
         <link rel="stylesheet" href="styles/normalize.css">
+
         <link rel="stylesheet" href="styles/base.css">
-        <link rel="stylesheet" href="styles/medium.css">
-        <link rel="stylesheet" href="styles/larger.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
        
        
@@ -41,12 +40,12 @@
     </div>
     </header>
     
-        <main>
+        <main class="center">
         <div class="hero">
             <picture>
                 <source srcset="images/small.webp" media="(max-width: 500px)">
                 <source srcset="images/medium.webp" media="(max-width: 1000px)">
-                <img src="images/large.webp" alt="Idaho Falls Chamber of Commerce" width="1500" height="750">
+                <img src="images/large.webp" alt="Idaho Falls Chamber of Commerce" width="1000" height="200">
             </picture>
         </div>
         <div>
@@ -58,13 +57,8 @@
             <h3>What is happening? Current events!</h3>
         </div>
         <div>
-            <h3>What is the Weather?</h3>
-            <div class="weather">
-                <p>Temperature: <span id="temperature">45</span> °F  🌡</p>
-                <p>Wind Speed: <span id="windspeed">10</span> mph  💨</p>
-                <p>Wind Chill: <span id="windchill">N/A</span>  🥶</p>
-
-            </div>
+            <h3>3 Day Forecast</h3>
+            <section id="forecast"></section>
         </div>
         <div>
             <h3>Spotlights of the Month</h3>
@@ -76,5 +70,6 @@
         </footer> 
         <script src="scripts/windchill.js"></script>   
         <script src="scripts/hmenu.js"></script>
+        <script src="scripts/weather.js"></script>
     </body>
 </html>
