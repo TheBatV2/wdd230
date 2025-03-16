@@ -33,7 +33,15 @@ html, body {
     display: block;
     margin: 0 auto 1rem; /* Center the image and add some margin below */
 }
+.member-card a {
+    color: white; /* Set the link color to white */
+    text-decoration: none; /* Remove underline */
+}
 
+.member-card a:hover, .member-card a:active {
+    background-color: var(--secondary-bg); /* Change color on hover or active state */
+    text-decoration: underline; /* Optionally add underline on hover */
+}
 .grid-view .member-card {
     display: inline-block;
     width: calc(33.333% - 2rem);
@@ -341,6 +349,16 @@ button[type="submit"]:hover {
     .hero img {
         width: 100%;
         height: auto;
+    }
+    #member-container {
+        display: block;
+    }
+    #member-container .member-card {
+        display: block;
+        width: 100%;
+    }
+    #view-toggle {
+        display: none;
     }
 }
 

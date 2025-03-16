@@ -9,14 +9,20 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .catch(error => console.error("Error fetching members:", error));
 
-    toggleView.addEventListener("click", () => {
-        const currentView = memberContainer.classList.contains("grid") ? "list" : "grid";
-        fetch("data/members.json")
-            .then(response => response.json())
-            .then(data => {
-                displayMembers(data.members, currentView);
-            });
-    });
+     // Toggle view functionality
+     const gridViewButton = document.getElementById('grid-view');
+     const listViewButton = document.getElementById('list-view');
+ 
+     gridViewButton.addEventListener('click', function() {
+         memberContainer.classList.add('grid-view');
+         memberContainer.classList.remove('list-view');
+     });
+ 
+     listViewButton.addEventListener('click', function() {
+         memberContainer.classList.add('list-view');
+         memberContainer.classList.remove('grid-view');
+     });
+ 
 
     function displayMembers(members, view) {
         memberContainer.innerHTML = "";
