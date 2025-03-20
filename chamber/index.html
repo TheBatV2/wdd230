@@ -1,51 +1,43 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="Spencer Barbre">
-        <meta name="description" content="This is the homepage for the Idaho Falls Chamber of Commerce">
-        <title>Idaho Falls Chamber of Commerce</title>
-        <link rel="icon" href="images/favicon-16x16.webp">
-        <meta property="og:title" content="Idaho Falls Chamber of Commerce">
-        <meta property="og:type" content="website">
-        <meta property="og:description" content="This is the homepage for the Idaho Falls Chamber of Commerce">
-        <meta property="og:image" content="https://thebatv2.github.io/wdd230/chamber/images/Hero16-9IFoptlarge.webp">
-        <meta property="og:url" content="https://thebatv2.github.io/wdd230/chamber/">
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/base.css">
-        <link rel="stylesheet" href="styles/larger.css">
-
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-       
-       
-        
-    </head>
-    <body>
-        <div id="banner" class="banner">
-            <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.!</p>
-            <button id="close-banner" class="close-banner">❌</button>
-        </div>
-    <header class = "center header">
-        <h1>Welcome to the Idaho Falls<br> Chamber of Commerce!</h1>
-    
-    <button type="button" class="hamburger"></button>
-    <nav class="nav">
-        <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="discover.html">Discover Idaho Falls</a></li>
-            <li><a href="join.html">Join Us!</a></li>
-            <li><a href="directory.html">Directory</a></li>
-         
-            
-        </ul>
-    </nav>
-    <div id="mode">
-        🌘
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Spencer Barbre">
+    <meta name="description" content="This is the homepage for the Idaho Falls Chamber of Commerce">
+    <title>Idaho Falls Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon-16x16.webp">
+    <meta property="og:title" content="Idaho Falls Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="This is the homepage for the Idaho Falls Chamber of Commerce">
+    <meta property="og:image" content="https://thebatv2.github.io/wdd230/chamber/images/Hero16-9IFoptlarge.webp">
+    <meta property="og:url" content="https://thebatv2.github.io/wdd230/chamber/">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div id="banner" class="banner">
+        <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.!</p>
+        <button id="close-banner" class="close-banner">❌</button>
     </div>
+    <header class="center header">
+        <h1>Welcome to the Idaho Falls<br> Chamber of Commerce!</h1>
+        <button type="button" class="hamburger"></button>
+        <nav class="nav">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover Idaho Falls</a></li>
+                <li><a href="join.html">Join Us!</a></li>
+                <li><a href="directory.html">Directory</a></li>
+            </ul>
+        </nav>
+        <div id="mode">
+            🌘
+        </div>
     </header>
-    
-        <main class="center">
+    <main class="center">
         <div class="hero">
             <picture>
                 <source srcset="images/small.webp" media="(max-width: 500px)">
@@ -55,7 +47,7 @@
         </div>
         <div>
             <p>Come Join our Community Chamber of Commerce, Expand and Grow with us!</p>
-            <button class ="btn">Join Us!</button>
+            <button class="btn">Join Us!</button>
         </div>
         <h2>Our Community</h2>
         <div>
@@ -65,17 +57,17 @@
             <h3>3 Day Forecast</h3>
             <section id="forecast"></section>
         </div>
-        <div>
+        <div class="spotlight">
             <h3>Spotlights of the Month</h3>
         </div>
-        </main>
-        
-        <footer>
-            <p></p>
-        </footer> 
-        <script src="scripts/windchill.js"></script>   
-        <script src="scripts/hmenu.js"></script>
-        <script src="scripts/weather.js"></script>
-        <script src="scripts/banner.js"></script>
-    </body>
+    </main>
+    <footer>
+        <p></p>
+    </footer>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/hmenu.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/spotlight.js"></script>
+</body>
 </html>

@@ -1,12 +1,10 @@
-/* Root variables for consistency */
 :root {
-    --primary-bg: #4083e1;  
-    --secondary-bg: #1a55a7; 
-    --text-color: white;    
-    --error-color: #e74c3c;  
-    --success-color: #27ae60; 
+    --primary-bg: #4083e1;
+    --secondary-bg: #1a55a7;
+    --text-color: white;
+    --error-color: #e74c3c;
+    --success-color: #27ae60;
 }
-
 
 html {
     background-color: var(--primary-bg);
@@ -28,28 +26,30 @@ html, body {
 }
 
 .member-card img {
-    max-width: 200px; /* Set a maximum width for the images */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 200px;
+    height: auto;
     display: block;
-    margin: 0 auto 1rem; /* Center the image and add some margin below */
+    margin: 0 auto 1rem;
 }
 .member-card a {
-    color: white; /* Set the link color to white */
-    text-decoration: none; /* Remove underline */
+    color: white;
+    text-decoration: none;
 }
 
 .member-card a:hover, .member-card a:active {
-    background-color: var(--secondary-bg); /* Change color on hover or active state */
-    text-decoration: underline; /* Optionally add underline on hover */
+    background-color: var(--secondary-bg);
+    text-decoration: underline;
 }
 .grid-view .member-card {
     display: inline-block;
     width: calc(33.333% - 2rem);
+    margin: 1rem;
 }
 
 .list-view .member-card {
     display: block;
     width: 100%;
+    margin: 1rem 0;
 }
 .banner {
     background-color: var(--secondary-bg);
@@ -60,7 +60,7 @@ html, body {
     top: 0;
     width: 100%;
     z-index: 1000;
-    display: none; /* Initially hidden */
+    display: none;
 }
 
 .close-banner {
@@ -74,7 +74,6 @@ html, body {
     right: 1rem;
 }
 
-
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -86,9 +85,8 @@ body {
     padding: 1.5rem;
 }
 
-/* Form container */
 .form-container {
-    background: rgba(255, 255, 255, 0.1); 
+    background: rgba(255, 255, 255, 0.1);
     margin-top: 10px;
     padding: 2rem;
     border-radius: 8px;
@@ -98,14 +96,12 @@ body {
     text-align: center;
 }
 
-/* Form labels */
 form label {
     display: block;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
-/* Form inputs */
 form input {
     width: 100%;
     padding: 0.8rem;
@@ -115,14 +111,12 @@ form input {
     font-size: 1rem;
 }
 
-/* Accessibility: Add focus styles */
 form input:focus {
     border-color: var(--secondary-bg);
     outline: none;
     box-shadow: 0 0 5px var(--secondary-bg);
 }
 
-/* Submit button */
 button[type="submit"] {
     background-color: var(--secondary-bg);
     color: var(--text-color);
@@ -136,10 +130,9 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #154a8e; /* Slightly darker blue */
+    background-color: #154a8e;
 }
 
-/* Error message */
 #error-message {
     color: var(--error-color);
     font-weight: bold;
@@ -148,13 +141,13 @@ button[type="submit"]:hover {
 }
 
 .success-container {
-    background: rgba(255, 255, 255, 0.1); /* Light transparent background */
+    background: rgba(255, 255, 255, 0.1);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     max-width: 400px;
-    margin: 50px auto; /* Centering with space from top */
+    margin: 50px auto;
     margin-top: 200rem;
 }
 
@@ -196,6 +189,61 @@ button[type="submit"]:hover {
     max-width: 400px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+.member img {
+    width: auto;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 8px;
+}
+.member h3, .spotlight h3 {
+    background-color: var(--secondary-bg);
+    padding: 10px;
+    text-align: center;
+    
+}
+.member h3 {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.member a {
+    color: white;
+    background-color: var(--secondary-bg);
+    padding: 5px;
+    display: inline;
+    text-decoration: none;
+}
+
+.member a:hover {
+    text-decoration: underline;
+}
+
+.member .membership {
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    display: inline-block;
+    text-shadow: none;
+}
+
+.member .membership.gold {
+    background-color: #FFD700;
+}
+
+.member .membership.silver {
+    background-color: silver;
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#view-toggle {
+    padding-top: 20px;
+}
+
 @media screen and (min-width: 800px) {
     #content {
         max-width: 1600px;
@@ -211,8 +259,6 @@ button[type="submit"]:hover {
     h1, h3, p {
         text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
     }
-
- 
 
     h1 {
         font-size: 200%;
@@ -242,8 +288,6 @@ button[type="submit"]:hover {
         color: white;
         background-color: var(--secondary-bg);
     }
-
-  
 
     #temperature, #windspeed, #windchill {
         color: yellow;
@@ -277,21 +321,21 @@ button[type="submit"]:hover {
 
     .grid-container {
         display: grid;
-        grid-template-columns: 1fr 2fr; 
-        grid-template-rows: auto 1fr auto; 
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto 1fr auto;
         height: 100vh;
     }
 }
 @media screen and (max-width: 800px) {
-    .gallery{
-        width: 100%;
-        height:auto;
-    }
-    .gallery img{
+    .gallery {
         width: 100%;
         height: auto;
     }
-    .sidebar{
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+    .sidebar {
         text-align: center;
     }
     .navbar {
