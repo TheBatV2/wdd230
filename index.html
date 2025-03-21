@@ -1,96 +1,73 @@
 <!doctype html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="This is the course assignment portal for WDD 230 - Web Frontend Development for Spencer Barbre">
-        <meta name="author" content="Spencer Barbre">
-        <title>Spencer Barbre - WDD 230 - Web Frontend Development</title>
-        <link rel="icon" href="favicon.ico">
-        <meta property="og:title" content="WDD 230: Web Frontend Development">
-        <meta property="og:type" content="website">
-        <meta property="og:description" content="Open webpage for WDD230.">
-        <meta property="og:image" content="images/hero-large.webp">
-        <meta property="og:url" content="https://thebatv2.github.io/wdd230/">
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/base.css">
-        <link rel="stylesheet" href="styles/larger.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-      
-        
-    </head>
-    <body>
-        <header id="headermain">
-            <img id="intropic" src="images/DSC_0482.jpg" alt="Photo of me and Steph" width="600" height="500">
-            <h1>Spencer Barbre</h1>
-        </header>
-        <button type="button" class="hamburger"></button>
-        <nav class="nav-container"> 
-            
-            <ul class="navbar">
-                <li><a href="#">Home</a></li>
-                <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
-                <li><a href="chamber/index.html">Chamber</a></li>
-                <li><a href="https://www.byui.edu/">BYU-Idaho</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/10?lang=eng">Scripture</a></li>
-            </ul>
-        </nav>  
-         
-       
-        <h2 class="text-center">WDD 230: Web Frontend Development</h2>
-        <div class="hero">
-            <picture>
-                <source srcset="images/hero-small.webp" media="(max-width: 400px)">
-                <img src="images/hero-large.webp" alt="temple" width="960">
-            </picture>
-            <div class="herolabel">Idaho Falls Temple</div>
-        </div> 
-        
-        <main>
-          
-            
-            <div class="la">
-                <h3 class="text-center">Learning Activities</h3>
-                <ul class="learning-activities"></ul>
-            </div>
-
-            <section id="info">
-                <h3>Information</h3>
-
-                <h3>3 Day Forecast</h3>
-                <section id="forecast">
-                    
-                   
-                </section>
-                <p>Blackfoot Idaho</p><br> 
-
-            </section>
-            <div class="info-card">
-                <h2>Information Card</h2>
-                <p>Welcome to our page!</p>
-                <p><strong>Page Visits:</strong> <span id="visit-count">0</span></p>
-            </div>
-        </main>
-        <div class="iframe-container">
-            <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=41%20johnson%20st%20blackffot%20ID+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-            </iframe>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is the course assignment portal for WDD 230 - Web Frontend Development for Spencer Barbre">
+    <meta name="author" content="Spencer Barbre">
+    <title>Spencer Barbre - WDD 230 - Web Frontend Development</title>
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="WDD 230: Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Open webpage for WDD230.">
+    <meta property="og:image" content="images/hero-large.webp">
+    <meta property="og:url" content="https://thebatv2.github.io/wdd230/">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <header id="headermain">
+        <img id="intropic" src="images/DSC_0482.jpg" alt="Photo of me and Steph" width="600" height="500">
+        <h1>Spencer Barbre</h1>
+    </header>
+    <button type="button" class="hamburger"></button>
+    <nav class="nav-container"> 
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="https://www.byui.edu/">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/10?lang=eng">Scripture</a></li>
+        </ul>
+    </nav>  
+    <h2 class="text-center">WDD 230: Web Frontend Development</h2>
+    <div class="hero">
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 400px)">
+            <img src="images/hero-large.webp" alt="temple" width="960">
+        </picture>
+        <div class="herolabel">Idaho Falls Temple</div>
+    </div> 
+    <main>
+        <div class="la">
+            <h3 class="text-center">Learning Activities</h3>
+            <ul class="learning-activities"></ul>
         </div>
-
-        <footer>
-            <p>
-                &copy; 2025,  Spencer Barbre, Idaho, United States of America.  	
-            </p>
-            <p id="lastModified"></p>
-        </footer>
-        <script src="scripts/getdates.js"></script>
-        <script src="scripts/links.js"></script>
-        <script src="scripts/weather.js"></script>
-        <script src="scripts/hmenu.js"></script>
-        <script src="scripts/visitorCounter"></script>
-       
-            
-        
-    </body>
-
-
+        <section id="info">
+            <h3>Information</h3>
+            <h3>3 Day Forecast</h3>
+            <section id="forecast"></section>
+            <p>Blackfoot Idaho</p><br> 
+        </section>
+        <div class="info-card">
+            <h2>Information Card</h2>
+            <p>Welcome to our page!</p>
+            <p><strong>Page Visits:</strong> <span id="visit-count">0</span></p>
+        </div>
+    </main>
+    <div class="iframe-container">
+        <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=41%20johnson%20st%20blackffot%20ID+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+    </div>
+    <footer>
+        <p>&copy; 2025, Spencer Barbre, Idaho, United States of America.</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/links.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/hmenu.js"></script>
+    <script src="scripts/visitorCounter.js"></script>
+</body>
 </html>

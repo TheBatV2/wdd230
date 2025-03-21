@@ -1,4 +1,4 @@
-@media screen and (min-width: 800px){
+@media screen and (min-width: 800px) {
     #content {
         max-width: 1600px;
         margin: 0 auto;
@@ -17,7 +17,6 @@
         display: grid;
         max-width: 100%;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
         gap: 10px;
         text-align: center;
     }
@@ -97,18 +96,17 @@
     }
 
     .hero {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 20px;
+        width: 800px;
+        height: auto;
+        position: relative;
+        margin: 0 auto;
+        padding: 10px;
     }
 
     .herolabel {
         position: absolute;
-        top: 400px;
-        left: 480px;
+        top: 30px;
+        left: 40px;
         background: radial-gradient(#fff, #707fd4);
         border: 1px solid silver;
         padding: 1.5rem;
@@ -154,7 +152,6 @@
         text-align: center;
     }
 
-    
     .la {
         display: flex;
         flex-direction: column;
@@ -186,8 +183,12 @@
         padding: 0.5rem;
         border-radius: 5px;
     }
+
     .text-center {
         margin-top: 20px;
     }
 
+    .hero {
+        position: relative;
+    }
 }

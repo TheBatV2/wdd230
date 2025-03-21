@@ -114,7 +114,7 @@
     }
 
     .hero {
-        position: relative; /* Add this to position the label correctly */
+        position: relative; 
     }
 
     .herolabel {
@@ -152,7 +152,7 @@
 
     html {
         background-color: #9f4fee;
-        color: white; /* Set the text color to white */
+        color: white; 
     }
 
     .la a:hover, .la a:active {
