@@ -87,7 +87,7 @@ html, body {
     width: 100%;
     padding: 1rem;
     text-align: center;
-    height: 5rem; /* Adjust this value to match the actual height of your footer */
+    height: 5rem; 
     margin-top: auto;
 }
 
@@ -98,12 +98,16 @@ body {
     min-height: 100vh;
     margin: 0;
     
-    padding-bottom: 0rem; /* Adjust this value to match the footer height */
+    padding-bottom: 0rem; 
 }
 .backgroundColorVar{
-    background-color: var(--secondary-bg);
+    align-self: center;    
     width: 50%;
     text-align: center;
+}
+.backgroundColorVar p {
+    background-color: var(--secondary-bg);
+    padding: 20px;
 }
 .form-container {
     background: rgba(255, 255, 255, 0.1);
@@ -249,12 +253,16 @@ button[type="submit"]:hover {
     text-shadow: none;
 }
 
-.member .membership.gold {
-    background-color: #FFD700;
+.member .membership.bronze {
+    background-color: #cd7f32;
 }
 
 .member .membership.silver {
     background-color: silver;
+}
+
+.member .membership.gold {
+    background-color: #FFD700;
 }
 
 .member {
@@ -313,6 +321,7 @@ main {
         padding: 0;
         margin: 0;
         padding-bottom: 15px;
+        
     }
 
     .navbar a {

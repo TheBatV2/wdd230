@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <p>${member.address}</p>
                 <p>${member.phone}</p>
                 <a href="${member.website}" target="_blank">Visit Website</a>
-                <p class="membership">${member.membership} Member</p>
+                <p class="membership ${member.membership.toLowerCase()}">${member.membership} Member</p>
             `;
             
             memberContainer.appendChild(memberElement);
