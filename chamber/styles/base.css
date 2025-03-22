@@ -114,7 +114,8 @@ body {
     width: 90%;
     max-width: 400px;
     text-align: center;
-    
+    align-content: center;
+    align-self: center;
 }
 
 form label {
@@ -271,6 +272,14 @@ main {
     flex-direction: column;
     width: 100%;
 }
+.spotlight{
+    border: var(--secondary-bg) solid 3px;
+    padding: 15px;
+}
+.spotlight h2 {
+    background-color: var(--secondary-bg);
+    width: 100%;
+}
 
 @media screen and (min-width: 800px) {
     #content {
@@ -359,7 +368,6 @@ main {
     .gallery {
         width: 100%;
         height: auto;
-        padding: 1.5rem;
     }
     .gallery img {
         width: 100%;
