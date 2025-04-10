@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scoots - Your go-to scooter rental service.">
+    <title>Scoots</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        .weather {
+            margin-top: 20px;
+        }
+        .weather img {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img id="scootslogo" src="images/scootslogo.webp" alt="Scoots Logo" style="height: 100px; vertical-align: middle;">
+       
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="rentals.html">Rental Options</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to Scoots</h1>
+        <section id="about">
+            <h2>About Scoots</h2>
+            <p>We are your reliable recreational rental service for all your transportation needs.  Together we will make your vacation as easy as possible!</p>
+        </section>
+
+        <section id="hero">
+            <img src="images/cozumel-15_11zon-scaled.webp" alt="Cosumel" style="width: 60%; height: auto;">
+        </section>
+
+      
+        <section class="calltoaction">
+            <h2>Explore Cozumel with Scoots</h2>
+            <p>Experience the beauty of Cozumel with our top-notch rental services. Whether you're looking for a scooter, ATV, or Jeep, we have you covered!</p>
+            
+        </section>            
+            
+        <section class="rental-options">
+            <h2>Rental Options</h2>
+            <p>We offer the following types of rentals:</p>
+            <ul>
+                <li><strong>Honda Motor Scooters</strong></li>
+                <ul>
+                    <li>Honda Metropolitan (49cc) - 1 person</li>
+                    <li>Honda Dio (110cc) - 2 person</li>
+                    <li>Honda PCX150 (149cc) - 2 person</li>
+                </ul>
+                <li><strong>Side-by-Side ATVs</strong></li>
+                <ul>
+                    <li>Honda Pioneer 1000 - 4 person</li>
+                </ul>
+                <li><strong>Jeeps</strong></li>
+                <ul>
+                    <li>Jeep Wrangler - 4 door manual with A/C - 5 person</li>
+                    <li>Jeep Wrangler - 2 door - open air - manual - 4 person</li>
+                </ul>
+            </ul>
+            <a href="rentals.html"><button>View all Options</button></a>
+            <a href="reservations.html"><button>Make a Reservation</button></a>
+        </section>
+
+        <section id="contact-summary" class="rental-options">
+            <h2>Contact Us</h2>
+            <p>Have questions or need assistance? Reach out to us:</p>
+            <ul>
+                <h3>Essential Contact Information</h3>
+                <p>Phone: +52 987 123 4567</p>
+                <p>Email: info@scootscozumel.com</p>
+                <p>Address 1: 123 Main Street, Cozumel, Mexico</p>
+                <p>Address 2: 456 Beachside Blvd, Cozumel, Mexico</p>
+            </ul>
+        </section>
+
+        <section id="weather" class="weather rental-options">
+            <h2>Current Weather</h2>
+            <div id="weather-info">
+                <p>Loading weather data...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Scoots. All rights reserved.</p>
+        <ul class="social-media">
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+        </ul>
+    </footer>
+
+    <script src="scripts/weather.js"></script>
+</body>
+</html>

@@ -1,0 +1,518 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1da8b4;
+    margin-top: auto; 
+}
+
+footer .social-media {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer .social-media li {
+    display: inline;
+}
+
+footer .social-media a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+    background-color: #d9d9d9; 
+    border-radius: 4px;
+    padding: 0.2rem;
+}
+
+body {
+    background-color: #f9f3e3; 
+    text-align: center; 
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #d1b07d; 
+    border: 1px solid #f17529;
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 100px; 
+}
+
+header nav ul {
+    display: flex;
+    list-style: none; 
+    padding: 10;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 2rem; 
+    text-align: center; 
+}
+
+header nav ul li a {
+    text-decoration: none; 
+    color: black; 
+    font-weight: bold;
+    padding: 0.5rem 1rem; 
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+    background-color: #d9d9d9; 
+    border-radius: 4px;
+    padding: 0.5rem 1rem; 
+}
+
+
+#hero {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    margin: 2rem 0; 
+}
+
+#hero img {
+    max-width: 40%; 
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+}
+
+header h1 {
+    font-size: 1.8rem; 
+    margin: 0;
+    flex: 1; 
+    text-align: center; 
+}
+
+header img {
+    height: 80px; 
+    margin-right: 1rem; 
+}
+
+
+.rental-options {
+    background-color: #d1b07d; 
+    padding: 1rem; 
+    border-radius: 8px; 
+    margin: 2rem auto; 
+    color: black; 
+    width: fit-content; 
+    max-width: 90%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: left; 
+}
+
+
+.rental-options ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.rental-options ul > li {
+    margin-bottom: 1rem;
+}
+
+.rental-options ul > li > strong {
+    font-size: 1.2rem;
+    text-decoration: underline; 
+}
+
+.rental-options ul ul {
+    list-style-type: disc; 
+    margin-left: 1.5rem; 
+    padding-left: 0;
+}
+
+.rental-options ul ul li {
+    margin-bottom: 0.5rem;
+}
+
+
+.rental-options a button {
+    background-color: #f9f3e3; 
+    color: black; 
+    font-size: 1.2rem; 
+    padding: 0.4rem 1.5rem; 
+    border: 2px solid black; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    margin: 0.5rem; 
+}
+
+.rental-options a button:hover {
+    background-color: #d1b07d; 
+    color: white; 
+    border-color: white; 
+}
+
+
+form {
+    max-width: 600px; 
+    margin: 2rem auto; 
+    padding: 1.5rem; 
+    border: 2px solid #f17529; 
+    border-radius: 8px; 
+    background-color: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+form fieldset {
+    border: 1px solid #f17529; 
+    border-radius: 8px; 
+    padding: 1rem; 
+    margin-bottom: 1.5rem; 
+}
+
+
+form legend {
+    font-weight: bold;
+    color: #f17529; 
+    padding: 0 0.5rem; 
+}
+
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input, form select, form textarea {
+    width: 80%; 
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form textarea {
+    width: 100%; 
+    max-width: 100%; 
+    resize: vertical; 
+    padding: 0.8rem; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 1rem; 
+    box-sizing: border-box; 
+}
+
+
+form button[type="submit"] {
+    background-color: #f17529; 
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%; 
+}
+
+form button[type="submit"]:hover {
+    background-color: #d15e20; 
+}
+
+form fieldset ul {
+    list-style-type: disc; 
+    margin-left: 2rem; 
+    padding-left: 0; 
+    text-align: left; 
+}
+
+form fieldset ul li {
+    margin-bottom: 0.5rem; 
+}
+
+form label[for="agree"] {
+    display: flex; 
+    align-items: center; 
+    gap: 0.5rem; 
+    margin-top: 1rem; 
+    text-align: left; 
+}
+
+form label[for="agree"] input[type="checkbox"] {
+    margin-left: auto; 
+    transform: scale(1.5); 
+    cursor: pointer; 
+}
+
+form label[for="agree"] input[type="checkbox"]:checked {
+    accent-color: #f17529; 
+}
+
+
+.rental-pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #f9f3e3;
+    border: 2px solid #d1b07d;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#rental-table-container {
+    width: 100%;
+    max-width: 800px; 
+    margin: 0 auto; 
+    overflow-x: auto; 
+    box-sizing: border-box;
+}
+
+.rental-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+    text-align: left; 
+}
+
+
+.rental-table th {
+    background-color: #d1b07d; 
+    color: black; 
+    font-weight: bold;
+    text-transform: uppercase; 
+    border: 1px solid #f17529; 
+    padding: 0.8rem;
+}
+
+
+.rental-table caption {
+    background-color: #f17529; 
+    color: white; 
+    font-size: 1.2rem; 
+    font-weight: bold;
+    padding: 0.5rem;
+    text-transform: uppercase; 
+}
+
+.rental-table th, .rental-table td {
+    padding: 0.5rem; 
+    word-wrap: break-word; 
+    text-align: left; 
+}
+
+.rental-table td {
+    color: #333; 
+    border: 1px solid #d1b07d; 
+    padding: 0.8rem; 
+}
+
+.rental-table tr:nth-child(even) {
+    background-color: #f9f3e3; 
+}
+
+.rental-table tr:nth-child(odd) {
+    background-color: #ffffff; 
+}
+
+.rental-table tr:hover {
+    background-color: #f1e7d6; 
+}
+
+
+.rental-photo {
+    width: 100px; 
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+.iframe-container {
+    display: flex; 
+    gap: 1rem; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    margin: 2rem 0; 
+}
+
+
+.iframe-container iframe {
+    border: 20px solid red; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+.rental-pricing a button {
+    background-color: #f17529; 
+    color: white; 
+    font-size: 1.5rem; 
+    padding: 1rem 2rem; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-top: 1rem; 
+    text-transform: uppercase; 
+}
+
+
+.rental-pricing a button:hover {
+    background-color: #d15e20; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+    transform: scale(1.05); 
+}
+
+@media screen and (max-width: 800px) {
+    
+    body {
+        text-align: left; 
+        padding: 1rem; 
+    }
+
+    
+    header {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        text-align: center; 
+    }
+
+    header img {
+        height: 60px; 
+        margin: 0 auto 1rem; 
+        display: block; 
+    }
+
+    header h1 {
+        font-size: 1.5rem; 
+        margin: 0.5rem 0; 
+    }
+
+    header nav {
+        width: 100%; 
+        text-align: center; 
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column; 
+        gap: 0.5rem; 
+        padding: 0;
+        margin: 0;
+    }
+
+    header nav ul li {
+        margin: 0; 
+    }
+
+    
+    #hero img {
+        max-width: 80%; 
+        margin: 1rem auto; 
+    }
+
+    
+    .rental-options {
+        width: 100%; 
+        padding: 1rem; 
+        margin: 1rem 0; 
+    }
+
+    .rental-options ul ul {
+        margin-left: 1rem; 
+    }
+
+    
+    form {
+        width: 100%; 
+        max-width: 100%; 
+        padding: 1rem; 
+        box-sizing: border-box; 
+    }
+
+    form input, form select, form textarea {
+        width: 100%; 
+        max-width: 100%; 
+        box-sizing: border-box; 
+    }
+
+    form button[type="submit"] {
+        width: 100%; 
+        font-size: 1rem; 
+        padding: 0.8rem; 
+        box-sizing: border-box; 
+    }
+
+    
+    .rental-table {
+        font-size: 0.9rem; 
+    }
+
+    .rental-table th, .rental-table td {
+        padding: 0.5rem; 
+    }
+
+    
+    .rental-pricing a button {
+        font-size: 1rem; 
+        padding: 0.8rem 1rem; 
+    }
+
+    
+    .iframe-container {
+        flex-direction: column; 
+        gap: 1rem; 
+    }
+
+    .iframe-container iframe {
+        width: 100%; 
+        height: auto; 
+    }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations - Scoots</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    
+    <header>
+        <img src="images/scootslogo.webp" alt="Scoots Logo" style="height: 100px; vertical-align: middle;">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="rentals.html">Rental Options</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    
+    <main>
+
+        <section class="rental-options">
+            <h2>Rental Options</h2>
+            <ul>
+                <li>Honda Motor Scooters</li>
+                <ul>
+                    <li>Honda Metropolitan (49cc) - 1 person</li>
+                    <li>Honda Dio (110cc) - 2 person</li>
+                    <li>Honda PCX150 (149cc) - 2 person</li>
+                </ul>
+                <li>Side-by-Side ATVs</li>
+                <ul>
+                    <li>Honda Pioneer 1000 - 4 person</li>
+                </ul>
+                <li>Jeeps</li>
+                <ul>
+                    <li>Jeep Wrangler - 4 door manual with A/C - 5 person</li>
+                    <li>Jeep Wrangler - 2 door - open air - manual - 4 person</li>
+                </ul>
+            </ul>
+        </section>
+        <h1>Rental Agreement Information</h1>
+        <p>Please fill out the form below to reserve your rental. Ensure all required fields are completed accurately.</p>
+
+        <form action="submit_reservation.php" method="post">
+            <fieldset>
+                <legend>Rental Details</legend>
+                <label for="rental-date">Rental Date:</label>
+                <input type="date" id="rental-date" name="rental-date" required>
+
+                <label for="rental-period">Rental Period (in days):</label>
+                <input type="number" id="rental-period" name="rental-period" min="1" required>
+
+                <label for="rental-type">Rental Type:</label>
+                <select id="rental-type" name="rental-type" required>
+                    <option value="honda-metropolitan">Honda Metropolitan (49cc) - 1 person</option>
+                    <option value="honda-dio">Honda Dio (110cc) - 2 person</option>
+                    <option value="honda-pcx150">Honda PCX150 (149cc) - 2 person</option>
+                    <option value="honda-pioneer">Honda Pioneer 1000 - 4 person</option>
+                    <option value="jeep-wrangler-4door">Jeep Wrangler - 4 door manual with A/C - 5 person</option>
+                    <option value="jeep-wrangler-2door">Jeep Wrangler - 2 door - open air - manual - 4 person</option>
+                </select>
+
+                <label for="rental-number">Number of Rentals:</label>
+                <input type="number" id="rental-number" name="rental-number" min="1" required>
+            </fieldset>
+
+            
+           
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="state-country">Home State or Country:</label>
+                <input type="text" id="state-country" name="state-country" required>
+            </fieldset>
+            <fieldset>
+                <legend>Rental Services and Agreements</legend>
+                <ul>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid driver's license is required in hand at the time of rental.</li>
+                    <li>No one under the age of 12 years is allowed to ride on the scooters.</li>
+                    <li>Fuel charge is not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is included.</li>
+                    <li>Damage insurance is available for purchase.</li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
+                    <li>Rentals may be returned to either physical location.</li>
+                </ul>
+                <label for="agree" class="checkbox-label">
+                    <span>I have read and agree to the Rental Services and Agreements.</span>
+                    <input type="checkbox" id="agree" name="agree" required>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label for="cruise-line">Cruise Line (if applicable):</label>
+                <input type="text" id="cruise-line" name="cruise-line">
+
+                <label for="special-accommodations">Special Accommodations/Comments:</label>
+                <textarea id="special-accommodations" name="special-accommodations" rows="4" placeholder="Include drop-off requests, if any."></textarea>
+            </fieldset>
+    
+
+            <button type="submit">Submit Reservation</button>
+        </form>
+    </main>
+
+    
+    <footer>
+        <p>&copy; 2025 Scoots. All rights reserved.</p>
+        <ul class="social-media">
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
